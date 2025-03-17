@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dashboard</title>
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="first.js">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">Dashboard</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">User</a></li>
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">Assignment</a></li>
+                <li><a href="#">Notifications</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="main-content">
+        
+        <header>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="profile">
+                <div class="profile-icon">P</div>
+                <div class="profile-dropdown">
+                    <ul>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        
+        <div class="dashboard">
+        
+            <div class="card user-stats">
+                <h2>Users</h2>
+                <div class="count">Congratulations 🎉</div>
+            </div>
+
+
+            <div class="card sales-graph">
+                <h2>Admin</h2>
+                <div class="bar-chart">
+                    <div class="bar" style="height: 50%"></div>
+                    <div class="bar" style="height: 70%"></div>
+                    <div class="bar" style="height: 40%"></div>
+                </div>
+            </div>
+
+    
+            <div class="card transactions">
+                <h2>Recent Assignment</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Assignment</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web page</td>
+                            <td>March 15</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>web page</td>
+                            <td>March 17</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            
+            <div class="card notifications">
+                <h2>Notifications</h2>
+                <ul>
+                    <li>New message from kvon Tech</li>
+                    <li>Server maintenance scheduled</li>
+                    <li>New update available</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="first.js"></script>
+</body>
+</html>
